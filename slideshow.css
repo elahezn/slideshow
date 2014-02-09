@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*---------------------------------------slideshow--------------------------------------------*/
+div.slideshow{
+	width: 450px;
+	height: 325px;
+	margin: 30px auto 0;
+	overflow: hidden;
+	position: relative;
+}
+div.slideshow div.train{
+	width:10000px;
+	height: 300px;
+	position: absolute;
+}
+div.slideshow div.train>div{
+	width: 450px;
+	height: 300px;
+	float: left;
+	border-radius: 4px;
+}
+/*--------------------------navigation---------------------------------------*/
+div.slideshow ul.btns{
+	height     : 13px;
+	list-style : none;
+	position   : absolute;
+	left       : 0;
+	bottom     :0;
+}
+div.slideshow ul.btns li{
+	float  : left;
+	width  : 30px;
+	height : 10px;
+	cursor : pointer;
+	margin-right       : 5px;
+	border-radius      : 2px;
+	background-color   : #333;
+    -webkit-transition: all 1100ms;
+    -moz-transition: all 1100ms;
+    -ms-transition: all 1100ms;
+    -o-transition: all 1100ms;
+    transition: all 1100ms;
+}
+
+div.slideshow ul.btns li:hover,
+div.slideshow ul.btns li.active{
+	height           : 16px;
+	margin-top       : -3px;
+	background-color : #2677AD;
+    -webkit-transition-duration: 200ms;
+    -moz-transition-duration: 200ms;
+    -ms-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    transition-duration: 200ms;
+}
+div.slideshow div.prev,
+div.slideshow div.next{
+	position : absolute;
+	top      : 135px;
+	width    : 30px;
+	height   : 30px;
+	opacity  : 0;
+	cursor   : pointer;
+	background-image   : url('http://ali.md/~mihando/subs/labs/share/data/arrow.png');
+	background-repeat  : no-repeat;
+    transition : opacity 500ms;
+	-o-transition : opacity 500ms;
+    -ms-transition : opacity 500ms;
+    -moz-transition : opacity 500ms;
+    -webkit-transition : opacity 500ms;
+}
+
+div.slideshow:hover div.prev,
+div.slideshow:hover div.next{
+	opacity : 1;
+}
+
+div.slideshow div.prev{
+	background-position : 0px 0px;
+	left : 10px;
+}
+div.slideshow div.next{
+	right : 10px;
+	background-position : -30px 0px;
+}
