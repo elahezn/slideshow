@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slide show</title>
+	
+  <link rel="stylesheet" type="text/css" href="slidshow.css">
+</head>
+<body>
+	<div class="container">
+		<div class="slideshow">
+			<div class="train">
+				<script type="text/javascript">
+					for (var i=0; i<10; i++) {
+						document.write('<div style="background-color:hsl('+i*50 +',70%,30%)"></div>');
+					}
+				</script>
+			</div>
+			<div class="prev"></div>
+			<div class="next"></div>
+			<ul class="btns"></ul>
+		</div>
+	</div>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
+  <!--<![endif]-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="slidshow.js"></script>
+</body>
+</html>
